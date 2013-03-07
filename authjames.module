@@ -44,7 +44,7 @@ function authjames_login_validate($form, &$form_state) {
   }
   // Call our custom authentication function.
   if (!authjames_authenticate($form_state['values'])) {
-    // Authenticattion failed; username did not begin 'dave'.
+    // Authenticattion failed; username did not begin 'james'.
     form_set_error('name', t('Unrecognized username.'));
   }
 }
